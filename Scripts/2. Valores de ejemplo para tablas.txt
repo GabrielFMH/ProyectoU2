@@ -1,0 +1,24 @@
+use Hospital;
+
+INSERT INTO BancoDeSangre values ('O','+',80);
+INSERT INTO BancoDeSangre values ('O','-',5);
+INSERT INTO BancoDeSangre values ('A','+',10);
+INSERT INTO BancoDeSangre values ('A','-',25);
+INSERT INTO BancoDeSangre values ('B','+',40);
+INSERT INTO BancoDeSangre values ('B','-',10);
+INSERT INTO BancoDeSangre values ('AB','+',35);
+INSERT INTO BancoDeSangre values ('AB','-',20);
+
+
+INSERT INTO Personal values('admin','CA9566EFDEACD79E9ACAE8F4A9A79E8B6EB5408FBA66A2E3FA82DB6F9857CE20','A');
+INSERT INTO Personal values('Valle','6A2567E565133E4314CA5C755F9B5221E0F557AF4E7F728CC45771F1060A1725','P');
+INSERT INTO Personal values('Cotrina','99EA56CED47C21431D0C56EF904F282AE4256ADB612C4E890B6DAA1B61D0C32C','N');
+
+INSERT INTO Pacientes values(12345678,'Renato','Chambilla','qwer','941241233','O','+');
+
+INSERT INTO Donantes values(56785432,'Jean','Valverde','O','+',0.5);
+
+select*from BancoDeSangre
+select*from Personal
+select*from Pacientes
+select*from Donantes

@@ -1,0 +1,30 @@
+CREATE DATABASE Hospital
+use Hospital
+
+Create table Personal(
+	Usuario varchar(100) NOT NULL,
+	Contrasena varchar(100) NOT NULL,
+	estado varchar(1) NOT NULL
+);
+Create table Pacientes(
+	dni int NOT NULL,
+	nombre varchar(100) NOT NULL,
+	apellido varchar(100) NOT NULL,
+	direccion varchar(100) NOT NULL,
+	telefono varchar(100) ,
+	tipo varchar(2) NOT NULL,
+	rh varchar(1) NOT NULL
+	);
+Create table BancoDeSangre(
+	Tipo varchar(2) NOT NULL,
+	Rh	varchar(1) NOT NULL,	 
+	Litros float NOT NULL
+);
+Create table Donantes(
+	dni int NOT NULL,
+	nombre varchar(100) NOT NULL,
+	apellido varchar(100) NOT NULL,
+	tipo varchar(2) NOT NULL,
+	rh varchar(1) NOT NULL,
+	litros float NOT NULL
+	);
